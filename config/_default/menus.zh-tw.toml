@@ -2,48 +2,50 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "首頁"
 pageRef = "/"
 weight = 1
 
 [[main]]
-name = "About"
+name = "關於"
 pageRef = "/about"
 weight = 2
 
 [[main]]
-name = "Elements"
-pageRef = "/elements"
+name = "Podcast"
+pageRef = "/Podcast"
 weight = 3
 
 [[main]]
+name = "書單"
+pageRef = "/reading_list"
 weight = 4
-name = "Pages"
 
 [[main]]
-parent = "Pages"
-name = "Blog"
+name = "文章"
 pageRef = "/blog"
+weight = 5
 
 [[main]]
-parent = "Pages"
+weight = 6
+name = "更多"
+
+
+
+[[main]]
+parent = "更多"
 name = "Contact"
 pageRef = "/contact"
 
 [[main]]
-parent = "Pages"
+parent = "更多"
 name = "Authors"
 pageRef = "/authors"
 
 [[main]]
-parent = "Pages"
+parent = "更多"
 name = "Categories"
 pageRef = "/categories"
-
-[[main]]
-parent = "Pages"
-name = "404 Page"
-pageRef = "/404"
 
 
 # footer menu
@@ -53,8 +55,8 @@ pageRef = "/about"
 weight = 1
 
 [[footer]]
-name = "Elements"
-pageRef = "/elements"
+name = "Podcast"
+pageRef = "/Podcast"
 weight = 2
 
 [[footer]]
