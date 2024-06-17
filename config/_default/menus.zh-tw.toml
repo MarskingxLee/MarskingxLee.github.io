@@ -1,4 +1,4 @@
-#############navigation ##############
+############# navigation ##############
 
 # main menu
 [[main]]
@@ -13,7 +13,7 @@ weight = 2
 
 [[main]]
 name = "Podcast"
-pageRef = "/Podcast"
+pageRef = "/podcast"
 weight = 3
 
 [[main]]
@@ -30,36 +30,28 @@ weight = 5
 weight = 6
 name = "更多"
 
-
-
 [[main]]
 parent = "更多"
-name = "Contact"
+name = "聯絡懶大"
 pageRef = "/contact"
 
 [[main]]
 parent = "更多"
-name = "Authors"
-pageRef = "/authors"
-
-[[main]]
-parent = "更多"
-name = "Categories"
+name = "系列文章"
 pageRef = "/categories"
-
 
 # footer menu
 [[footer]]
-name = "About"
+name = "關於"
 pageRef = "/about"
 weight = 1
 
 [[footer]]
 name = "Podcast"
-pageRef = "/Podcast"
+pageRef = "/podcast"
 weight = 2
 
 [[footer]]
-name = "Privacy Policy"
+name = "隱私權政策"
 pageRef = "/privacy-policy"
 weight = 3

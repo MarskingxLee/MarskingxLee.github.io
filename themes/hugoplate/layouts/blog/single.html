@@ -62,16 +62,29 @@
                 </ul>
               </div>
             {{ end }}
-            <div class="lg:col-4 flex items-center">
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (T "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
+            <div class="lg:col-5 flex items-center">
+              <h5 class="mr-3">{{ T "fallow" }} :</h5>
+              <ul class="social-icons">
+              {{ range site.Data.social.main}}
+                <li>
+                  <a
+                    target="_blank"
+                    aria-label="{{ .name }}"
+                    rel="nofollow noopener"
+                    href="{{ .link | safeURL }}">
+                    <i class="{{ .icon }}"></i>
+                  </a>
+                </li>
+            {{ end }}
+            </ul>
             </div>
           </div>
           <!-- comments -->
-          {{ if site.Config.Services.Disqus.Shortname }}
-            <div class="mt-20">
-              {{ template "_internal/disqus.html" . }}
-            </div>
-          {{ end }}
+<!--          {{ if site.Config.Services.Disqus.Shortname }}-->
+<!--            <div class="mt-20">-->
+<!--              {{ template "_internal/disqus.html" . }}-->
+<!--            </div>-->
+<!--          {{ end }}-->
         </article>
       </div>
 

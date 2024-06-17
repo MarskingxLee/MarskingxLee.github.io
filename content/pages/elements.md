@@ -103,7 +103,7 @@ This is a simple note.
 {{< /notice >}}
 
 {{< notice "tip" >}}
-This is a simple tip.
+這是一本好書
 {{< /notice >}}
 
 {{< notice "info" >}}

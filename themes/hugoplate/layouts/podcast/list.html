@@ -79,7 +79,7 @@
   <!-- /Features -->
 
   <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial-home" }}
+  {{ with site.GetPage "sections/testimonial-podcast" }}
     {{ if .Params.enable }}
       <section class="section">
         <div class="container">
@@ -111,6 +111,9 @@
                               fill="currentColor" />
                           </svg>
                         </div>
+                        <h3 class="h5 font-primary font-semibold">
+                              {{ .title }}
+                        </h3>
                         <blockquote class="mt-8">
                           {{ .content | markdownify }}
                         </blockquote>
@@ -145,7 +148,7 @@
   {{ end }}
 
 <!-- Call to actions -->
-{{ with site.GetPage "sections/call-to-action-home" }}
+{{ with site.GetPage "sections/call-to-action-podcast" }}
   {{ if .Params.enable }}
     <section class="mb-28">
       <div class="container">
@@ -176,7 +179,5 @@
   {{ end }}
 {{ end }}
 <!-- /Call to actions -->
-
-
 
 {{ end }}

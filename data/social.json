@@ -3,22 +3,22 @@
     {
       "name": "facebook",
       "icon": "fab fa-facebook",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/lazytoberich"
     },
     {
-      "name": "twitter",
-      "icon": "fab fa-twitter",
-      "link": "https://twitter.com/"
+      "name": "threads",
+      "icon": "fab fa-threads",
+      "link": "https://www.threads.net/@lazytoberich/"
     },
     {
-      "name": "github",
-      "icon": "fab fa-github",
-      "link": "https://www.github.com/"
+      "name": "instagram",
+      "icon": "fab fa-instagram",
+      "link": "https://www.instagram.com/lazytoberich/"
     },
     {
-      "name": "linkedin",
-      "icon": "fab fa-linkedin",
-      "link": "https://www.linkedin.com/"
+      "name": "discord",
+      "icon": "fab fa-discord",
+      "link": "https://discord.gg/xeYCvQWBPx"
     }
   ]
 }

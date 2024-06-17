@@ -2,50 +2,94 @@
   {{ partial "page-header" . }}
 
 
-  <section class="section-sm">
-    <div class="container">
-      <div class="row">
-        <div class="md:col-10 lg:col-6 mx-auto">
-          <form action="{{ site.Params.contact_form_action }}" method="POST">
-            <div class="mb-6">
-              <label for="name" class="form-label">
-                Full Name <span class="text-red-500">*</span>
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="md:col-10 lg:col-6 mx-auto">
+        <form action="{{ site.Params.contact_form_action }}" method="POST">
+          <div class="mb-6">
+            <label for="name" class="form-label">
+              暱稱 <span class="text-red-500">*</span>
+            </label>
+            <input
+              id="name"
+              name="name"
+              class="form-input"
+              placeholder="輸入你的暱稱"
+              type="text"
+              required />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="form-label">
+              E-mail <span class="text-red-500">*</span>
+            </label>
+            <input
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="輸入你的Email"
+              type="email"
+              required />
+          </div>
+          <div class="mb-6">
+            <label class="form-label">聯絡原因<span class="text-red-500">*</span></label>
+            <div class="space-y-2">
+              <label class="inline-flex items-center">
+                <input type="checkbox" name="reason[]" value="問題" class="form-checkbox" />
+                <span class="ml-2">我有問題想要請懶大回答</span>
               </label>
-              <input
-                id="name"
-                name="name"
-                class="form-input"
-                placeholder="John Doe"
-                type="text" />
-            </div>
-            <div class="mb-6">
-              <label for="email" class="form-label">
-                Working Mail <span class="text-red-500">*</span>
+              <label class="inline-flex items-center">
+                <input type="checkbox" name="reason[]" value="故事" class="form-checkbox" />
+                <span class="ml-2">我有故事想要跟懶大分享</span>
               </label>
-              <input
-                id="email"
-                name="email"
-                class="form-input"
-                placeholder="john.doe@email.com"
-                type="email" />
-            </div>
-            <div class="mb-6">
-              <label for="message" class="form-label">
-                Anything else? <span class="text-red-500">*</span>
+              <label class="inline-flex items-center">
+                <input type="checkbox" name="reason[]" value="課程問題" class="form-checkbox" />
+                <span class="ml-2">我有財務規劃方面的問題</span>
               </label>
-              <textarea
-                id="message"
-                name="message"
-                class="form-input"
-                placeholder="Message goes here..."
-                rows="8"></textarea>
+              <label class="inline-flex items-center">
+                <input type="checkbox" name="reason[]" value="建議" class="form-checkbox" />
+                <span class="ml-2">我有對網站和 Podcast 節目的建議</span>
+              </label>
+              <label class="inline-flex items-center">
+                <input type="checkbox" name="reason[]" value="投稿" class="form-checkbox" />
+                <span class="ml-2">我想留言五星吹捧懶大</span>
+              </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+          </div>
+          <div class="mb-6">
+            <label class="form-label">我保證（兩個回答都要打勾，訊息框才會出現）<span class="text-red-500">*</span></label>
+            <div class="space-y-2">
+              <label class="inline-flex items-center">
+                <input type="checkbox" name="guarantee[]" value="google" class="form-checkbox" />
+                <span class="ml-2">我保證這個問題在Google十分鐘內找不到答案。</span>
+              </label>
+              <label class="inline-flex items-center">
+                <input type="checkbox" name="guarantee[]" value="spam" class="form-checkbox" />
+                <span class="ml-2">我保證留言是正常留言，而非垃圾訊息或其它。</span>
+              </label>
+            </div>
+          </div>
+          <div class="mb-6">
+            <label for="message" class="form-label">
+              輸入留言 <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-input"
+              placeholder="輸入你的留言細節…"
+              rows="8"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">送出</button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<script src="{{ "js/form-validation.js" | relURL }}"></script>
+
+
 
   <!-- google map -->
   {{ with site.Params.google_map }}
@@ -116,5 +160,4 @@
     <script defer src="{{ $gmap.RelPermalink }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.google_map.map_api_key }}&libraries=places"></script>
   {{ end }}
-
 {{ end }}

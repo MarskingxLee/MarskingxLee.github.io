@@ -79,7 +79,7 @@
   <!-- /Features -->
 
   <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial-home" }}
+  {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
       <section class="section">
         <div class="container">
@@ -145,7 +145,7 @@
   {{ end }}
 
 <!-- Call to actions -->
-{{ with site.GetPage "sections/call-to-action-home" }}
+{{ with site.GetPage "sections/call-to-action" }}
   {{ if .Params.enable }}
     <section class="mb-28">
       <div class="container">
