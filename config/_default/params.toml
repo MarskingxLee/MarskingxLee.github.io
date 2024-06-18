@@ -89,6 +89,11 @@ button = "我知道了"
 [mermaid]
 js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
 
+#readingTime
+[article]
+math = false
+readingTime = true
+
 ######################## sidebar widgets #########################
 [widgets]
 sidebar = ["apple-podcast", "categories", "tags", ]
@@ -109,3 +114,5 @@ enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&amp;id=517a8482e3&amp;f_id=006cc3e0f0" # replace this url with yours
 mailchimp_form_name = "b_db5c854191bdeffdff24a5147_517a8482e3"
+
+

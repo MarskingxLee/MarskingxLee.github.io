@@ -1,7 +1,9 @@
 <div class="bg-body dark:bg-darkmode-body">
   {{ $image:= .Params.image }}
   {{ if $image }}
+    <a href="{{ .RelPermalink }}">
     {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+    </a>
   {{ end }}
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">
@@ -28,6 +30,8 @@
           </a>
         {{ end }}
       </li>
+    {{ $showReadingTime := .Params.readingTime | default (.Site.Params.article.readingTime) }}
+
     </ul>
   {{ end }}
   <p class="mb-6">{{ .Summary }}</p>
