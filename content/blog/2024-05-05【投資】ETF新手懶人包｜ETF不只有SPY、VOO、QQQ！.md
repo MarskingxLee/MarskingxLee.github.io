@@ -13,7 +13,7 @@ slug: 【Investment】ETF Beginner's Guide | ETFs are not limited to SPY, VOO, Q
 ---
 這2年，大家都在說ETF投資，簡直是火到炸裂，可以說是投資圈的啦啦隊現象也不為過！說ETF是投資新手必學的一種方式完全沒問題，風險還可能比股票低，對新手來說實在是太友善了(但還是要先有基本的財務規劃概念比較好)。
 
-接下來，我們要聊聊ETF到底是什麼、它和指數型基金有什麼不一樣、主動型ETF和被動型ETF有什麼區別，還有市場上都有哪些類型的ETF，然後我會教你如何投資ETF。
+接下來，我們要聊聊ETF到底是什麼、它和指數型基金有什麼不一樣、主動型ETF和被動型ETF有什麼區別，還有市場上都有哪些類型的ETF，然 後我會教你如何投資ETF。
 
 ## 什麼是ETF？ETF等於指數型基金嗎？
 
@@ -115,9 +115,3 @@ ETF種類多到讓人眼花繚亂，只要是能投資的就能創建一個ETF�
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 ETF是投資最好的入門，少掉了單一個股的高風險，免去了選股的麻煩，由其是被動型的ETF，直接與指數貼齊，無腦享受所有的好處。當然，最重要還是你自己要知道為什麼要買!而或是為什麼要賣?
 {{< /quote >}}
-
-![收聽懶得變有錢Podcast](/images/blog/lazytoberich.svg)
-
-<iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
-
-## 👉[前往更多懶人的連結](https://linktr.ee/lazytoberich)
